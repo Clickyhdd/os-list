@@ -1,2 +1,3 @@
 # os-list
-A project I'm working on to help people get involved in open source projects
+A project I'm working on to help people get involved in open source projects.
+NOTE: FAR FROM DONE.
