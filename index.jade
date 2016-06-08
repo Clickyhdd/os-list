@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/screen.css')
+    link(href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css")
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='https://use.typekit.net/sqr4veo.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+  body
+    .border
+    .wrapper
+      header.main_header.clearfix
+        .logo
+          h1
+            | Open Source
+            span  List
+        nav.nav
+          a(href='#') About
+          a(href='#') Add your project
+      ul#timeline
+        li.date example
+        a(href='#')
+          li.listing.clearfix
+            .info
+              span.job_title Project name (click on the box to go to the project page)
+              span.job_info What they need help in
+        li.date June 7th
+        a(href='#')
+          li.listing.clearfix
+            .info
+              span.job_title Swordfish OS
+              span.job_info
+                | Assembly 
+                span &bull;
+                |  C 
+                span &bull;
+                |  Documentation
+      .load_more
+        button.button Load More
