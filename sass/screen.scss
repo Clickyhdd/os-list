@@ -82,14 +82,7 @@ body {
     text-decoration: none;
   }
 }
-.nav-a {
-  padding-top: 1.75em;
-  a {
-    color: $secondary;
-    margin-left: 1em;
-    text-decoration: none;
-  }
-}
+
 
 #timeline {
   width: 100%;
@@ -459,4 +452,18 @@ body {
 .qwerty{
   text-align: center;
   display: inline-block;
+}
+
+
+#footer{
+  text-align: center;
+  margin-left:35%;
+  position:fixed;
+  bottom:0;
+  padding-top: 1.75em;
+  a {
+    color: $secondary;
+    margin-left: 1em;
+    text-decoration: none;
+  }
 }
