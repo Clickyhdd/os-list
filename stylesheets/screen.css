@@ -1,0 +1,751 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* line 5, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 15, ../sass/screen.scss */
+body {
+  font-family: "proxima-nova",sans-serif;
+  padding-bottom: 5em;
+}
+
+/* line 20, ../sass/screen.scss */
+.border {
+  height: 6px;
+  border: 0;
+  background-image: linear-gradient(to right, #4db8de, #4db8de 25%, #4db8de 25%, #4db8de 50%, #4db8de 50%, #4db8de 75%, #4db8de 75%, #4db8de 100%, #4db8de 100%);
+  -webkit-background-size: 50% 100%;
+  -moz-background-size: 50% 100%;
+  background-size: 50% 100%;
+}
+
+/* line 42, ../sass/screen.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 47, ../sass/screen.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 51, ../sass/screen.scss */
+.wrapper {
+  width: 750px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* line 57, ../sass/screen.scss */
+.main_header {
+  margin: 5em 0 3em 0;
+}
+
+/* line 62, ../sass/screen.scss */
+.logo img {
+  width: 75px;
+  float: left;
+}
+/* line 66, ../sass/screen.scss */
+.logo h1 {
+  float: left;
+  font-size: 1.35em;
+  padding-top: 1.1em;
+  color: #34324b;
+}
+/* line 71, ../sass/screen.scss */
+.logo h1 span {
+  font-weight: 400;
+}
+
+/* line 76, ../sass/screen.scss */
+.nav {
+  float: right;
+  padding-top: 1.75em;
+}
+/* line 79, ../sass/screen.scss */
+.nav a {
+  color: #74718f;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+/* line 87, ../sass/screen.scss */
+#timeline {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+/* line 92, ../sass/screen.scss */
+#timeline a {
+  text-decoration: none;
+}
+/* line 95, ../sass/screen.scss */
+#timeline:after {
+  content: "";
+  width: 1px;
+  background: 1px #e6e7e9;
+  height: 90%;
+  position: absolute;
+  top: 5em;
+  left: 3em;
+  z-index: 0;
+}
+/* line 105, ../sass/screen.scss */
+#timeline .listing {
+  background: #FFF;
+  border: 1px solid #e6e7e9;
+  border-radius: .3rem;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  display: table;
+  width: 96%;
+  transition: all .3s ease-in-out;
+}
+/* line 115, ../sass/screen.scss */
+#timeline .listing img, #timeline .listing .info, #timeline .listing .job_type {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: .9em;
+  color: #74718f;
+}
+/* line 121, ../sass/screen.scss */
+#timeline .listing .image_wrapper {
+  width: 60px;
+}
+/* line 123, ../sass/screen.scss */
+#timeline .listing .image_wrapper img {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  border-radius: .25em;
+}
+/* line 130, ../sass/screen.scss */
+#timeline .listing .info {
+  line-height: 1.25;
+  width: 640px;
+  padding-left: 25px;
+}
+/* line 134, ../sass/screen.scss */
+#timeline .listing .info .job_title {
+  font-weight: 700;
+  color: #34324b;
+  font-size: 1.5em;
+}
+/* line 139, ../sass/screen.scss */
+#timeline .listing .info .job_info {
+  color: #74718f;
+  font-size: .9em;
+  display: block;
+}
+/* line 143, ../sass/screen.scss */
+#timeline .listing .info .job_info span {
+  margin: 0 .75em;
+}
+/* line 148, ../sass/screen.scss */
+#timeline .listing .job_type {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75em;
+  position: relative;
+  white-space: nowrap;
+  padding-top: 0.6em;
+  width: 100px;
+}
+/* line 156, ../sass/screen.scss */
+#timeline .listing .job_type:before {
+  content: " ";
+  background: #a378fc;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: -20px;
+  top: 28px;
+}
+/* line 169, ../sass/screen.scss */
+#timeline .listing:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.1);
+}
+/* line 174, ../sass/screen.scss */
+#timeline .date {
+  display: inline-block;
+  padding: 0.6rem 0;
+  width: 100px;
+  background: #FFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 3rem;
+  font-weight: 700;
+  font-size: 0.65rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  z-index: 2;
+  position: relative;
+  margin: 1em 0 2em 0;
+}
+
+/* line 191, ../sass/screen.scss */
+.load_more {
+  text-align: center;
+}
+/* line 193, ../sass/screen.scss */
+.load_more .button {
+  border: 2px solid #a378fc;
+  outline: none;
+  padding: 1em 3.5em;
+  text-align: center;
+  background: transparent;
+  border-radius: 2em;
+  color: #a378fc;
+}
+
+@media only screen and (max-width: 700px) {
+  /* line 205, ../sass/screen.scss */
+  .main_header {
+    margin-top: 3em;
+  }
+
+  /* line 208, ../sass/screen.scss */
+  .logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 212, ../sass/screen.scss */
+  .logo img {
+    float: none;
+  }
+  /* line 215, ../sass/screen.scss */
+  .logo h1 {
+    float: none;
+    margin: 0;
+    font-size: 1.1em;
+  }
+
+  /* line 222, ../sass/screen.scss */
+  .nav {
+    float: none;
+    text-align: center;
+  }
+  /* line 225, ../sass/screen.scss */
+  .nav a {
+    margin: 0 .5em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 234, ../sass/screen.scss */
+  #timeline .listing .image_wrapper {
+    margin-right: 1em;
+  }
+  /* line 236, ../sass/screen.scss */
+  #timeline .listing .image_wrapper img {
+    width: 50px;
+  }
+  /* line 240, ../sass/screen.scss */
+  #timeline .listing .info {
+    width: 100%;
+    padding: .4em 0 0 0;
+  }
+  /* line 243, ../sass/screen.scss */
+  #timeline .listing .info .job_title {
+    font-size: 1.25em;
+  }
+  /* line 247, ../sass/screen.scss */
+  #timeline .listing .job_type {
+    display: none;
+  }
+}
+/* line 255, ../sass/screen.scss */
+#timeline-a {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+/* line 260, ../sass/screen.scss */
+#timeline-a a {
+  text-decoration: none;
+}
+/* line 264, ../sass/screen.scss */
+#timeline-a .listing {
+  background: #FFF;
+  border: 1px solid #e6e7e9;
+  border-radius: .3rem;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  display: table;
+  width: 96%;
+}
+/* line 274, ../sass/screen.scss */
+#timeline-a .listing img, #timeline-a .listing .info, #timeline-a .listing .job_type {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: .9em;
+  color: #74718f;
+}
+/* line 280, ../sass/screen.scss */
+#timeline-a .listing .image_wrapper {
+  width: 60px;
+}
+/* line 282, ../sass/screen.scss */
+#timeline-a .listing .image_wrapper img {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  border-radius: .25em;
+}
+/* line 289, ../sass/screen.scss */
+#timeline-a .listing .info {
+  line-height: 1.25;
+  width: 640px;
+  padding-left: 25px;
+}
+/* line 293, ../sass/screen.scss */
+#timeline-a .listing .info .job_title {
+  font-weight: 700;
+  color: #34324b;
+  font-size: 1.5em;
+}
+/* line 298, ../sass/screen.scss */
+#timeline-a .listing .info .job_info {
+  color: #74718f;
+  font-size: .9em;
+  display: block;
+  transition: all .3s ease-in-out;
+}
+/* line 302, ../sass/screen.scss */
+#timeline-a .listing .info .job_info span {
+  margin: 0 .75em;
+}
+/* line 304, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+/* line 309, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline a {
+  text-decoration: none;
+}
+/* line 312, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline:after {
+  content: "";
+  width: 1px;
+  background: 1px #e6e7e9;
+  height: 90%;
+  position: absolute;
+  top: 5em;
+  left: 3em;
+  z-index: 0;
+}
+/* line 322, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing {
+  background: #FFF;
+  border: 1px solid #e6e7e9;
+  border-radius: .3rem;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  display: table;
+  width: 96%;
+  transition: all .3s ease-in-out;
+}
+/* line 332, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing img, #timeline-a .listing .info .job_info timeline .listing .info, #timeline-a .listing .info .job_info timeline .listing .job_type {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: .9em;
+  color: #74718f;
+}
+/* line 338, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing .image_wrapper {
+  width: 60px;
+}
+/* line 340, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing .image_wrapper img {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  border-radius: .25em;
+}
+/* line 347, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing .info {
+  line-height: 1.25;
+  width: 640px;
+  padding-left: 25px;
+}
+/* line 351, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing .info .job_title {
+  font-weight: 700;
+  color: #34324b;
+  font-size: 1.5em;
+}
+/* line 356, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing .info .job_info {
+  color: #74718f;
+  font-size: .9em;
+  display: block;
+}
+/* line 360, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing .info .job_info span {
+  margin: 0 .75em;
+}
+/* line 365, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing .job_type {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75em;
+  position: relative;
+  white-space: nowrap;
+  padding-top: 0.6em;
+  width: 100px;
+}
+/* line 373, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing .job_type:before {
+  content: " ";
+  background: #a378fc;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: -20px;
+  top: 28px;
+}
+/* line 386, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .listing:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.1);
+}
+/* line 391, ../sass/screen.scss */
+#timeline-a .listing .info .job_info timeline .date {
+  display: inline-block;
+  padding: 0.6rem 0;
+  width: 100px;
+  background: #FFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 3rem;
+  font-weight: 700;
+  font-size: 0.65rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  z-index: 2;
+  position: relative;
+  margin: 1em 0 2em 0;
+}
+/* line 408, ../sass/screen.scss */
+#timeline-a .listing .info .job_info .job_type {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75em;
+  position: relative;
+  white-space: nowrap;
+  padding-top: 0.6em;
+  width: 100px;
+}
+/* line 416, ../sass/screen.scss */
+#timeline-a .listing .info .job_info .job_type:before {
+  content: " ";
+  background: #a378fc;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: -20px;
+  top: 28px;
+}
+/* line 429, ../sass/screen.scss */
+#timeline-a .listing .info .job_info:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.1);
+}
+/* line 434, ../sass/screen.scss */
+#timeline-a .listing .info .date {
+  display: inline-block;
+  padding: 0.6rem 0;
+  width: 100px;
+  background: #FFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 3rem;
+  font-weight: 700;
+  font-size: 0.65rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  z-index: 2;
+  position: relative;
+  margin: 1em 0 2em 0;
+}
+
+/* line 452, ../sass/screen.scss */
+.qwerty {
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 458, ../sass/screen.scss */
+#footer {
+  text-align: center;
+  margin-left: 35%;
+  position: fixed;
+  bottom: 0;
+  padding-top: 1.75em;
+}
+/* line 464, ../sass/screen.scss */
+#footer a {
+  color: #74718f;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+/* line 474, ../sass/screen.scss */
+#feedback-page {
+  text-align: center;
+}
+
+/* line 478, ../sass/screen.scss */
+#form-main {
+  width: 100%;
+  float: left;
+  padding-top: 0px;
+}
+
+/* line 484, ../sass/screen.scss */
+#form-div {
+  background-color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+/* line 500, ../sass/screen.scss */
+.feedback-input {
+  color: #34324b;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+/* line 518, ../sass/screen.scss */
+.feedback-input:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+/* line 527, ../sass/screen.scss */
+.focused {
+  color: #30aed6;
+  border: #30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+/* line 533, ../sass/screen.scss */
+#name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+/* line 540, ../sass/screen.scss */
+#name:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+/* line 548, ../sass/screen.scss */
+#email {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+/* line 555, ../sass/screen.scss */
+#email:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+/* line 562, ../sass/screen.scss */
+#comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+/* line 569, ../sass/screen.scss */
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+/* line 576, ../sass/screen.scss */
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color: white;
+}
+
+/* line 581, ../sass/screen.scss */
+#button-blue {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+/* line 599, ../sass/screen.scss */
+#button-blue:hover {
+  background-color: transparent;
+  color: #0493bd;
+}
+
+/* line 604, ../sass/screen.scss */
+.submit:hover {
+  color: #3498db;
+}
+
+/* line 608, ../sass/screen.scss */
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+/* line 619, ../sass/screen.scss */
+.submit:hover .ease {
+  width: 100%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+  /* line 625, ../sass/screen.scss */
+  #form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
