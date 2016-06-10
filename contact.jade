@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/screen.css')
+    link(href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css")
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='https://use.typekit.net/sqr4veo.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+  body
+    .border
+    .wrapper
+      header.main_header.clearfix
+        .logo
+          h1
+            | Open Source
+            span  List
+        nav.nav
+          a(href='index.html') List
+          a(href='about.html') About
+      ul#timeline-a
+          li.listing.clearfix
+            .info
+              form(action="https://formspree.io/trevor@vannorman.me" method="POST")
+              input(type="text" name="name")
+              input(type="email" name="_replyto")
+              input(type="submit" value="Send")
+   footer#footer
+       p &copy Trevor VanNorman 2016
+         a(href='http://vannorman.me') | &nbsp View my site 
+           a(href='https://github.com/Clickyhdd/os-list') | &nbsp View source 
